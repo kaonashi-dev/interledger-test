@@ -3,6 +3,12 @@
   "module": "index.ts",
   "type": "module",
   "private": true,
+  "scripts": {
+    "simulate": "bun run simulate-payment.ts",
+    "simulate:dry": "bun run simulate-payment.ts --dry-run",
+    "wallets": "bun run wallets.ts",
+    "typecheck": "tsc --noEmit"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
